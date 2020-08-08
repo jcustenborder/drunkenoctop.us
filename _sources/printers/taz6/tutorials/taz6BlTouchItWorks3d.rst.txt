@@ -10,7 +10,7 @@ Parts Used
 """"""""""
 
 * 1x - `BLTouch`_
-* 1x - `TAZ 6 Modified Carriage`_
+* 1x - `TAZ 6 Modified X Carriage`_
 * 1x - `BLTouch calibration spacer 8.3mm`_
 * 17x - `M3 Heat-Set Inserts`_
 * 5ft - `22 gauge Black Wire`_
@@ -41,14 +41,15 @@ Cut the wire ties holding the cables to the printer frame.
 .. image:: taz6BlTouchItWorks3d/IMG_20200808_142224.jpg
 
 
+Cut the wire ties holding the cables to the X Carriage.
 
-
+.. image:: taz6BlTouchItWorks3d/IMG_20200808_184325.jpg
 
 
 
 .. _IT-Works 3D: https://itworks3d.com/
 .. _BLTouch: https://www.amazon.com/gp/product/B07DL48X9L/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
-.. _TAZ 6 Modified Carriage: https://www.thingiverse.com/thing:3512979
+.. _TAZ 6 Modified X Carriage: https://www.thingiverse.com/thing:3512979
 .. _M3 Heat-Set Inserts: https://www.mcmaster.com/94180A333/
 .. _22 gauge Black Wire: https://www.amazon.com/gp/product/B00B4ZRPEY/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 .. _22 gauge White Wire: https://www.amazon.com/gp/product/B00B4ZRPEY/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
