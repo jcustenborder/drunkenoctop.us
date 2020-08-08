@@ -1,18 +1,16 @@
-.. figure:: https://github.com/marciot/drunken-octopus-marlin/raw/master/images/drunken-octopus-small.jpg
+.. image:: drunken-octopus-small.jpg
    :alt: Drunken Octopus Logo
 
 *Drunken Octopus* Marlin: An Alternative (Unofficial) Firmware for LulzBot Printers
 ===================================================================================
 
 Hello. My name is Marcio. I was the Firmware Engineer at LulzBot prior
-to the massive `layoff of
-2019 <https://www.fabbaloo.com/blog/2019/10/12/the-end-of-lulzbot>`__
+to the massive `layoff of 2019 <https://www.fabbaloo.com/blog/2019/10/12/the-end-of-lulzbot>`__
 that decimated the staff and left nearly one hundred people out of a
 job.
 
-At the time I was let go, I was a `major
-contributor <https://github.com/marcio-ao>`__ to the upcoming version of
-Marlin, Marlin 2.0.
+At the time I was let go, I was a `major contributor <https://github.com/marcio-ao>`__ to the
+upcoming version of Marlin, Marlin 2.0.
 
 When Marlin 2.0 comes out, it will bring a host of new features and
 benefits. But ensuring Marlin 2.0 remains compatible with LulzBot
@@ -49,9 +47,8 @@ of supported printers and upgrades!
 How can you help make *Drunken Octopus* a success?
 ==================================================
 
-:heart: :heart: :heart: **To help me the most, please consider
-contributions via my `Patreon
-page <https://www.patreon.com/marciot>`__**. :heart: :heart: :heart:
+To help me the most, please consider contributions via my
+`Patreon page <https://www.patreon.com/marciot>`_
 
 Working on Marlin used to be a paid, full-time job for me, but without
 LulzBot to support me, I will have to work on my own time using my own
@@ -79,24 +76,14 @@ See the `FAQ </docs/FAQ.md>`__ for information on the following topics:
 -  How do I compile *Drunken Octopus* from source?
 -  Where can I find parts to upgrade my printer?
 
-License
-=======
+.. toctree::
+    :maxdepth: 2
 
-Marlin is published under the `GPL license </LICENSE>`__ because we
-believe in open development. The GPL comes with both rights and
-obligations. Whether you use Marlin firmware as the driver for your open
-or closed-source product, you must keep Marlin open, and you must
-provide your compatible Marlin source code to end users upon request.
-The most straightforward way to comply with the Marlin license is to
-make a fork of Marlin on Github, perform your modifications, and direct
-users to your modified fork.
+    printers
+    additional
+    faq
+    building
+    contributing
+    license
 
-While we can't prevent the use of this code in products (3D printers,
-CNC, etc.) that are closed source or crippled by a patent, we would
-prefer that you choose another firmware or, better yet, make your own.
-
-**Photo Credits:** Coat hanger photograph by Ari Sytner. Used with
-permission.
-
-**Trademarks:** *LulzBot* is a registered trademark of *Aleph Objects,
-Inc.*
+.. _Latest Release: https://github.com/marciot/drunken-octopus-marlin/releases/download/v2.0.0.1rc21/marlin-drunken-octopus-v2.0.x-rc21-complete-for-patreon-supporters.zip

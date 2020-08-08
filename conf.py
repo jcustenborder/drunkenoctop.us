@@ -18,9 +18,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Drunken Octopus Marlin'
-copyright = '2020, Marcio T'
-author = 'Marcio T'
+copyright = '2020, Marcio Teixeira'
+author = 'Marcio Teixeira'
 
+version = u'2.0.0.1'
+# The full version, including alpha/beta/rc tags.
+release = u'2.0.0.1rc20'
+# v2.0.0.1rc20
 
 # -- General configuration ---------------------------------------------------
 
@@ -36,7 +40,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'venv']
 
 
 # -- Options for HTML output -------------------------------------------------
