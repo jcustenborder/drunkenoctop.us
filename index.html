@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Drunken Octopus Marlin: An Alternative (Unofficial) Firmware for LulzBot Printers &mdash; Drunken Octopus Marlin 2.0.0.1rc20 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Supported Printers" href="printers.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home" alt="Documentation Home"> Drunken Octopus Marlin
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="printers.html">Supported Printers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="additional.html">Additional Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">F.A.Q.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building.html">Compile from source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Drunken Octopus Marlin</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><em>Drunken Octopus</em> Marlin: An Alternative (Unofficial) Firmware for LulzBot Printers</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <img alt="Drunken Octopus Logo" src="_images/drunken-octopus-small.jpg" />
+<div class="section" id="drunken-octopus-marlin-an-alternative-unofficial-firmware-for-lulzbot-printers">
+<h1><em>Drunken Octopus</em> Marlin: An Alternative (Unofficial) Firmware for LulzBot Printers<a class="headerlink" href="#drunken-octopus-marlin-an-alternative-unofficial-firmware-for-lulzbot-printers" title="Permalink to this headline">¶</a></h1>
+<p>Hello. My name is Marcio. I was the Firmware Engineer at LulzBot prior
+to the massive <a class="reference external" href="https://www.fabbaloo.com/blog/2019/10/12/the-end-of-lulzbot">layoff of 2019</a>
+that decimated the staff and left nearly one hundred people out of a
+job.</p>
+<p>At the time I was let go, I was a <a class="reference external" href="https://github.com/marcio-ao">major contributor</a> to the
+upcoming version of Marlin, Marlin 2.0.</p>
+<p>When Marlin 2.0 comes out, it will bring a host of new features and
+benefits. But ensuring Marlin 2.0 remains compatible with LulzBot
+printers requires someone to work with the Marlin developers so that
+they know our needs. During my nearly three years at LulzBot, I
+developed a close working relationship with several Marlin developers
+and helped make sure LulzBot printers were always well supported.</p>
+<p>I’ve set up <em>Drunken Octopus</em> Marlin to continue that work of making
+sure users of LulzBot printers will not be left behind.</p>
+<div class="section" id="who-can-benefit-from-drunken-octopus-marlin">
+<h2>Who can benefit from <em>Drunken Octopus</em> Marlin?<a class="headerlink" href="#who-can-benefit-from-drunken-octopus-marlin" title="Permalink to this headline">¶</a></h2>
+<p>This firmware is for users who want the very latest firmware and
+features for their LulzBot printers and <strong>are willing to take the risks
+associated with running development firmware</strong>. It is also for people
+who want to modify or upgrade their LulzBot printers.</p>
+<p>LulzBot made a conservative decision of keeping most customers on older
+but internally tested firmware. They turned off certain features for the
+comfort of new users. On the contrary, <em>Drunken Octopus</em> will charge
+right ahead, taking it all in, because that is how he likes to roll!
+:sunglasses:</p>
+</div>
+<div class="section" id="drunken-octopus-comes-in-up-to-196-different-flavors">
+<h2><em>Drunken Octopus</em> comes in up to 196 different flavors!<a class="headerlink" href="#drunken-octopus-comes-in-up-to-196-different-flavors" title="Permalink to this headline">¶</a></h2>
+<p>If you are savvy with electrical and mechanical things, <em>Drunken
+Octopus</em> will give you the software to match any hardware upgrades you
+make to your printer. See the <a class="reference external" href="/docs/FAQ.md">FAQ</a> for a complete list
+of supported printers and upgrades!</p>
+</div>
+</div>
+<div class="section" id="how-can-you-help-make-drunken-octopus-a-success">
+<h1>How can you help make <em>Drunken Octopus</em> a success?<a class="headerlink" href="#how-can-you-help-make-drunken-octopus-a-success" title="Permalink to this headline">¶</a></h1>
+<p>To help me the most, please consider contributions via my
+<a class="reference external" href="https://www.patreon.com/marciot">Patreon page</a></p>
+<p>Working on Marlin used to be a paid, full-time job for me, but without
+LulzBot to support me, I will have to work on my own time using my own
+resources. In exchange for your help, I hope to create content, such as
+printer upgrade guides and other tutorials. I learned a <em>ton</em> at the R&amp;D
+department at LulzBot and I have much I want to teach you!</p>
+<p>Even if you are unable to contribute, I can still use your help. See the
+<a class="reference external" href="/docs/FAQ.md">FAQ</a> for a list of non-monetary ways to chip in!</p>
+<div class="section" id="got-more-questions">
+<h2>Got more questions?<a class="headerlink" href="#got-more-questions" title="Permalink to this headline">¶</a></h2>
+<p>See the <a class="reference external" href="/docs/FAQ.md">FAQ</a> for information on the following topics:</p>
+<ul class="simple">
+<li><p>What printers can I use with <em>Drunken Octopus</em>?</p></li>
+<li><p>How can you contribute to <em>Drunken Octopus</em>?</p></li>
+<li><p>How does <em>Drunken Octopus</em> differ from LulzBot Marlin?</p></li>
+<li><p>How does <em>Drunken Octopus</em> differ from Marlin 2.0 upstream?</p></li>
+<li><p>Will <em>Drunken Octopus</em> damage my printer?</p></li>
+<li><p>What if I want my printer to remain sober?</p></li>
+<li><p>Will <em>Drunken Octopus</em> binaries and pre-build configuration files be
+provided?</p></li>
+<li><p>What pins are used when upgrading a TAZ to an Archim 2.0?</p></li>
+<li><p>How do I compile <em>Drunken Octopus</em> from source?</p></li>
+<li><p>Where can I find parts to upgrade my printer?</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="printers.html">Supported Printers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="printers/mini.html">Mini</a></li>
+<li class="toctree-l2"><a class="reference internal" href="printers/mini2.html">Mini 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="printers/taz5.html">TAZ 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="printers/taz6.html">TAZ 6</a></li>
+<li class="toctree-l2"><a class="reference internal" href="printers/tazPro.html">TAZ Pro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="printers/tazWorkhorse.html">TAZ Workhorse</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="additional.html">Additional Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="additional/archim2.html">Archim 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="additional/bltouch.html">BLTouch</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">F.A.Q.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#will-drunken-octopus-binaries-and-pre-build-configuration-files-be-provided">Will <em>Drunken Octopus</em> binaries and pre-build configuration files be provided?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#will-using-drunken-octopus-void-my-printer-warranty">Will using <em>Drunken Octopus</em> void my printer warranty?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#will-drunken-octopus-damage-my-printer">Will <em>Drunken Octopus</em> damage my printer?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#what-if-i-want-my-printer-to-remain-sober">What if I want my printer to remain sober?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#additional-questions">Additional Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="building.html">Compile from source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="printers.html" class="btn btn-neutral float-right" title="Supported Printers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Marcio Teixeira
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

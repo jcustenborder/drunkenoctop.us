@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Troubleshooting &mdash; Drunken Octopus Marlin 2.0.0.1rc20 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="BLTouch" href="../bltouch.html" />
+    <link rel="prev" title="TAZ6 Archim2 Conversion Guide" href="archim.taz6.conversion.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> Drunken Octopus Marlin
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../printers.html">Supported Printers</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../additional.html">Additional Information</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../archim2.html">Archim 2</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="archim.pinouts.html">Archim 2 pinouts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="archim.taz6.conversion.html">TAZ6 Archim2 Conversion Guide</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Troubleshooting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#if-you-cant-connect-via-the-serial-port">If you can’t connect via the serial port</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-do-i-find-the-serial-port-used-by-the-archim">How do I find the serial port used by the Archim?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-issues-you-may-encounter">Other issues you may encounter</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../bltouch.html">BLTouch</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">F.A.Q.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../building.html">Compile from source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Drunken Octopus Marlin</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../additional.html">Additional Information</a> &raquo;</li>
+        
+          <li><a href="../archim2.html">Archim 2</a> &raquo;</li>
+        
+      <li>Troubleshooting</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/additional/archim2/archim.troubleshooting.2.0.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="troubleshooting">
+<h1>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="if-you-cant-connect-via-the-serial-port">
+<h2>If you can’t connect via the serial port<a class="headerlink" href="#if-you-cant-connect-via-the-serial-port" title="Permalink to this headline">¶</a></h2>
+<p>Try this:</p>
+<ul class="simple">
+<li><p>From the Windows Device Manager, select “View -&gt; Show Hidden
+Devices”.</p></li>
+<li><p>Under the “Ports (COM &amp; LPT)”, right click each of the COM entries
+and select “Uninstall Device”.</p>
+<ul>
+<li><p>Check the “Delete the driver software for this device”.</p></li>
+<li><p>Repeat for each of the COM ports.</p></li>
+</ul>
+</li>
+<li><p>Reboot your computer.</p></li>
+</ul>
+</div>
+<div class="section" id="how-do-i-find-the-serial-port-used-by-the-archim">
+<h2>How do I find the serial port used by the Archim?<a class="headerlink" href="#how-do-i-find-the-serial-port-used-by-the-archim" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Open the Window Device Manager</p></li>
+<li><p>Expand the section called “Ports (COM &amp; LPT)”</p>
+<ul>
+<li><p>If you see “Serial GCode 3D Printer”, the printer is online, but
+is not ready to accept firmware.</p></li>
+<li><p>If you see “3D Printer powered by RAMBo”, the printer is online,
+but is not ready to accept firmware.</p></li>
+<li><p>If you see “Bossa Program Port” as one of the entries, it means
+the board is ready to accept firmware.</p></li>
+</ul>
+</li>
+</ul>
+<img alt="../../_images/device_manager.png" src="../../_images/device_manager.png" />
+</div>
+<div class="section" id="other-issues-you-may-encounter">
+<h2>Other issues you may encounter<a class="headerlink" href="#other-issues-you-may-encounter" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The Archim is a lot more finicky when it comes to flashing. I have
+instructions <a class="reference external" href="How-to-Flash-Archim-Firmware">here</a></p></li>
+<li><p>The drivers on the Archim 2.0 can easily overheat. Overheating
+drivers may cause:</p>
+<ul>
+<li><p>Skipped steps on Z and foreshortening of prints</p></li>
+<li><p>The extruder motor may stop during a print</p></li>
+</ul>
+</li>
+<li><p>The default firmware settings in Drunken Octopus are taken from the
+TAZ Pro and have <em>not</em> been validated for a TAZ 6 or Workhorse
+(because I don’t own these printers), therefore they may not be
+optimal. I suggest experimenting with the following commands:</p>
+<ul>
+<li><p><a class="reference external" href="https://marlinfw.org/docs/gcode/M906.html">M906 TMC Motor
+Current</a></p></li>
+<li><p><a class="reference external" href="https://marlinfw.org/docs/gcode/M569.html">M569 Set TMC stepping
+mode</a></p></li>
+<li><p><a class="reference external" href="https://marlinfw.org/docs/gcode/M911.html">M119 TMC OT Pre-Warn
+Condition</a></p></li>
+<li><p><a class="reference external" href="https://marlinfw.org/docs/gcode/M912.html">M912 Clear TMC OT
+Pre-Warn</a></p></li>
+<li><p><a class="reference external" href="https://marlinfw.org/docs/gcode/M122.html">M122 TMC Debugging</a></p></li>
+</ul>
+</li>
+<li><p>If you find better settings, please let me know about them and I can
+add them to drunken octopus.</p></li>
+<li><p>Another thing to try is to <a class="reference external" href="https://www.instructables.com/id/Wiring-Your-Z-Stepper-Motors-in-Series">wire your Z motors in
+series</a>.
+This may put less load on the Trinamic drivers.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../bltouch.html" class="btn btn-neutral float-right" title="BLTouch" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="archim.taz6.conversion.html" class="btn btn-neutral float-left" title="TAZ6 Archim2 Conversion Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Marcio Teixeira
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

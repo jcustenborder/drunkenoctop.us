@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tutorial - Taz 6 BLTouch with IT-Works 3D print heads &mdash; Drunken Octopus Marlin 2.0.0.1rc20 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="TAZ Pro" href="../../tazPro.html" />
+    <link rel="prev" title="TAZ 6" href="../../taz6.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home" alt="Documentation Home"> Drunken Octopus Marlin
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../printers.html">Supported Printers</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../mini.html">Mini</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mini2.html">Mini 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../taz5.html">TAZ 5</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../taz6.html">TAZ 6</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Tutorial - Taz 6 BLTouch with IT-Works 3D print heads</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#parts-used">Parts Used</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../tazPro.html">TAZ Pro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tazWorkhorse.html">TAZ Workhorse</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../additional.html">Additional Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../faq.html">F.A.Q.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../building.html">Compile from source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Drunken Octopus Marlin</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../../printers.html">Supported Printers</a> &raquo;</li>
+        
+          <li><a href="../../taz6.html">TAZ 6</a> &raquo;</li>
+        
+      <li>Tutorial - Taz 6 BLTouch with IT-Works 3D print heads</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../_sources/printers/taz6/tutorials/taz6BlTouchItWorks3d.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tutorial-taz-6-bltouch-with-it-works-3d-print-heads">
+<h1>Tutorial - Taz 6 BLTouch with IT-Works 3D print heads<a class="headerlink" href="#tutorial-taz-6-bltouch-with-it-works-3d-print-heads" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial will walk through the installation of a BLTouch on a TAZ6 that is using print heads from
+<a class="reference external" href="https://itworks3d.com/">IT-Works 3D</a>.</p>
+<div class="section" id="parts-used">
+<h2>Parts Used<a class="headerlink" href="#parts-used" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>1x - <a class="reference external" href="https://www.amazon.com/gp/product/B07DL48X9L/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1">BLTouch</a>.</p></li>
+<li><p>1x - <a class="reference external" href="https://www.thingiverse.com/thing:3512979">TAZ 6 Modified Carriage</a>.</p></li>
+<li><p>17x - <a class="reference external" href="https://www.mcmaster.com/94180A333/">M3 Heat-Set Inserts</a>.</p></li>
+<li><p>5ft - <a class="reference external" href="https://www.amazon.com/gp/product/B00B4ZRPEY/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1">22 gauge Black Wire</a>.</p></li>
+<li><p>5ft - <a class="reference external" href="https://www.amazon.com/gp/product/B00B4ZRPEY/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1">22 gauge White Wire</a>.</p></li>
+<li><p>5ft - <a class="reference external" href="https://www.amazon.com/gp/product/B00B4ZRPEY/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1">22 gauge Red Wire</a>.</p></li>
+<li><p>5ft - <a class="reference external" href="https://www.amazon.com/gp/product/B00B4ZRPEY/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1">22 gauge Brown Wire</a>.</p></li>
+<li><p>5ft - <a class="reference external" href="https://www.amazon.com/gp/product/B00B4ZRPEY/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1">22 gauge Orange Wire</a>.</p></li>
+<li><p>2x - <a class="reference external" href="https://www.amazon.com/gp/product/B07G8V35JG/">26-24 AWG Heat Shrink butt splices</a></p></li>
+<li><p>2x - <a class="reference external" href="https://www.amazon.com/iExcell-Stainless-Socket-Washers-Assortment/dp/B0812TYT5L">M3 30mm Hex Cap Screws</a></p></li>
+<li><p>2x - <a class="reference external" href="https://www.amazon.com/gp/product/B06Y3JDM4R">M3 10mm Screws</a></p></li>
+<li><p>4x - <a class="reference external" href="https://www.amazon.com/gp/product/B07FRLRWD4">M3 Self locking nut</a></p></li>
+<li><p><a class="reference external" href="https://www.amazon.com/Monday-HS-Plastic-Self-Locking-Electronics-Electrical/dp/B078NT5F2B">Wire ties</a>.</p></li>
+</ul>
+<p>Remove the print head from the printer</p>
+<img alt="../../../_images/IMG_20200808_133632.jpg" src="../../../_images/IMG_20200808_133632.jpg" />
+<p>Remove the side cover from the printer</p>
+<img alt="../../../_images/IMG_20200808_131341.jpg" src="../../../_images/IMG_20200808_131341.jpg" />
+<p>Remove the rear cover from the printer</p>
+<img alt="../../../_images/IMG_20200808_133451.jpg" src="../../../_images/IMG_20200808_133451.jpg" />
+<p>Cut the wire ties holding the cables to the printer frame.</p>
+<img alt="../../../_images/IMG_20200808_142224.jpg" src="../../../_images/IMG_20200808_142224.jpg" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../tazPro.html" class="btn btn-neutral float-right" title="TAZ Pro" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../../taz6.html" class="btn btn-neutral float-left" title="TAZ 6" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Marcio Teixeira
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

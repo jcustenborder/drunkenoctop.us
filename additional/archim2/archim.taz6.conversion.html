@@ -1,0 +1,251 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>TAZ6 Archim2 Conversion Guide &mdash; Drunken Octopus Marlin 2.0.0.1rc20 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Troubleshooting" href="archim.troubleshooting.2.0.html" />
+    <link rel="prev" title="Archim 2 pinouts" href="archim.pinouts.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> Drunken Octopus Marlin
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../printers.html">Supported Printers</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../additional.html">Additional Information</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../archim2.html">Archim 2</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="archim.pinouts.html">Archim 2 pinouts</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">TAZ6 Archim2 Conversion Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#related-pages">Related Pages:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="archim.troubleshooting.2.0.html">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../bltouch.html">BLTouch</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">F.A.Q.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../building.html">Compile from source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Drunken Octopus Marlin</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../additional.html">Additional Information</a> &raquo;</li>
+        
+          <li><a href="../archim2.html">Archim 2</a> &raquo;</li>
+        
+      <li>TAZ6 Archim2 Conversion Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/additional/archim2/archim.taz6.conversion.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="taz6-archim2-conversion-guide">
+<h1>TAZ6 Archim2 Conversion Guide<a class="headerlink" href="#taz6-archim2-conversion-guide" title="Permalink to this headline">¶</a></h1>
+<p>I put together a guide that I am refining as I get feedback from others
+that documents the steps and considerations I took while converting the
+stock Lulzbot TAZ6 with RAMBo 1.3L to the Archim2 controller board. With
+more people using this configuration, the development curve should
+accelerate! <a class="reference external" href="https://github.com/radensb/TAZ6-Archim2-Conversion">Lulzbot TAZ6 Archim2 Conversion -
+Github</a></p>
+<div class="section" id="related-pages">
+<h2>Related Pages:<a class="headerlink" href="#related-pages" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="Archim-2.0-Troubleshooting">Archim 2.0 Troubleshooting</a></p></li>
+<li><p><a class="reference external" href="How-to-Flash-Archim-Firmware">How to Flash the Archim</a></p></li>
+<li><p><a class="reference external" href="Archim-Pinouts">Archim Pinouts</a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="archim.troubleshooting.2.0.html" class="btn btn-neutral float-right" title="Troubleshooting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="archim.pinouts.html" class="btn btn-neutral float-left" title="Archim 2 pinouts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Marcio Teixeira
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

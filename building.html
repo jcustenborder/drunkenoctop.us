@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Compile from source &mdash; Drunken Octopus Marlin 2.0.0.1rc20 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributing" href="contributing.html" />
+    <link rel="prev" title="F.A.Q." href="faq.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Drunken Octopus Marlin
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="printers.html">Supported Printers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="additional.html">Additional Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">F.A.Q.</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Compile from source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Drunken Octopus Marlin</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Compile from source</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/building.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="compile-from-source">
+<h1>Compile from source<a class="headerlink" href="#compile-from-source" title="Permalink to this headline">¶</a></h1>
+<p><strong>Windows 10:</strong> If you are using Windows 10, one of the easiest ways to
+build the firmware is using <em>Windows Subsystem for Linux (WSL)</em>. Simply
+follow <a class="reference external" href="https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/">this guide</a> to set up WSL and get yourself an Ubuntu shell,
+then proceed with the steps for Linux.</p>
+<p><strong>Linux:</strong> Open a shell and execute the following commands one at a
+time:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">python</span> <span class="n">git</span> <span class="n">make</span> <span class="n">rename</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">gcc</span><span class="o">-</span><span class="n">avr</span> <span class="n">avr</span><span class="o">-</span><span class="n">libc</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">gcc</span><span class="o">-</span><span class="n">arm</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">eabi</span>
+<span class="n">sudo</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="s2">&quot;/mnt/c/Users/YOUR_WINDOWS_USER_DIR/Documents&quot;</span> <span class="n">Documents</span>
+<span class="n">cd</span> <span class="n">Documents</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">marciot</span><span class="o">/</span><span class="n">drunken</span><span class="o">-</span><span class="n">octopus</span><span class="o">-</span><span class="n">marlin</span><span class="o">.</span><span class="n">git</span> <span class="n">marlin</span>
+<span class="n">cd</span> <span class="n">marlin</span>
+<span class="o">./</span><span class="n">build</span><span class="o">-</span><span class="n">configs</span><span class="o">.</span><span class="n">sh</span>
+<span class="o">./</span><span class="n">build</span><span class="o">-</span><span class="n">firmware</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Once this process is complete (it may take several hours), the firmware
+files will be in the <code class="docutils literal notranslate"><span class="pre">build</span></code> directory of your Documents folder.</p>
+<p><strong>Arduino IDE:</strong> In order to use the Arduino IDE, you will need download
+and extract the zip file from the <a class="reference external" href="https://github.com/marciot/drunken-octopus-marlin">GitHub repo</a>.</p>
+<p>The, go into the unpacked folder and replace the “Configuration.h” and
+“Configuration_adv.h” files in the “Marlin” subdirectory with one of the
+example configuration files from “config/examples/AlephObjects”.
+<em>Drunken Octopus</em> will only include the configuration files for the
+standard printers and toolheads.</p>
+<p>Open the “Marlin.ino” file from the “Marlin” subdirectory in the Arduino
+IDE.</p>
+<p>Choose “Preferences” from the “File” menu and add
+“<a class="reference external" href="https://raw.githubusercontent.com/ultimachine/ArduinoAddons/master/package_ultimachine_index.json">https://raw.githubusercontent.com/ultimachine/ArduinoAddons/master/package_ultimachine_index.json</a>”
+to the “Additional Boards Manager URLs”.</p>
+<p>In the “Boards Manager”: - For TAZ Pro: Search for “Archim” and install
+“Archim by UltiMachine” - For all others: Search for “RAMBo” and install
+“RepRap Arduino-compatible Mother Board (RAMBo) by UltiMachine”</p>
+<p>Choose the board corresponding to your printer from the “Board” submenu
+menu of the “Tools” menu. For a TAZ Pro, select “Archim”; for all
+others, select “RAMBo”</p>
+<p>To compile and upload the firmware to your printer, select “Upload” from
+the “Sketch” menu.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="faq.html" class="btn btn-neutral float-left" title="F.A.Q." accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Marcio Teixeira
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
