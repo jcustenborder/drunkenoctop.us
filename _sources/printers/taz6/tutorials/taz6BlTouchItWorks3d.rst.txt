@@ -22,6 +22,8 @@ Parts Used
 * 2x - `M3 30mm Hex Cap Screws`_
 * 2x - `M3 10mm Screws`_
 * 4x - `M3 Self locking nut`_
+* 2x - `2x6 Dupont connectors`_
+* 5x - `Male Dupont Connectors`_
 * `Wire ties`_
 
 Remove the print head from the printer
@@ -45,6 +47,21 @@ Cut the wire ties holding the cables to the X Carriage.
 
 .. image:: taz6BlTouchItWorks3d/IMG_20200808_184325.jpg
 
+Remove the X Carriage.
+
+.. image:: taz6BlTouchItWorks3d/IMG_20200808_184936.jpg
+
+Use a soldering iron and press the `M3 Heat-Set Inserts`_ into the `TAZ 6 Modified X Carriage`_.
+
+.. image:: taz6BlTouchItWorks3d/IMG_20200808_185021.jpg
+
+
+
+
+M851 X-62 Y-10
+M500
+
+G29 P1
 
 
 .. _IT-Works 3D: https://itworks3d.com/
@@ -62,3 +79,5 @@ Cut the wire ties holding the cables to the X Carriage.
 .. _M3 10mm Screws: https://www.amazon.com/gp/product/B06Y3JDM4R
 .. _M3 Self locking nut: https://www.amazon.com/gp/product/B07FRLRWD4
 .. _BLTouch calibration spacer 8.3mm: https://www.thingiverse.com/thing:2019475
+.. _2x6 Dupont connectors: https://www.amazon.com/gp/product/B07JG8HVLG
+.. _Male Dupont Connectors: https://www.amazon.com/gp/product/B07JG8HVLG
